@@ -1,1 +1,41 @@
+fibonocci series:
+
+import java.util.Scanner;
+public class fibonacci {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number of terms:");
+        int term=sc.nextInt();
+        int first = 0 , second = 1;
+        System.out.println("The fibonocci numbers ars:");
+        for(int i=1; i<=term; i++){
+            System.out.println(first+" ");
+        
+        int next = first + second;
+        first= second;
+        second= next;
+        }
+    }   
+}
+
+output:
+The fibonocci numbers ars:
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+
+
+logic is :
+*int first = 0 , second = 1;
+ * for(int i=1; i<=term; i++)
+  *int next = first + second;
+        first= second;
+        second= next;
 
